@@ -114,7 +114,7 @@ body {
 
 /* =================== THANK YOU CONTAINER =================== */
 
- #thanks {
+#thanks {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,4 +176,237 @@ body {
     color: hsl(216, 12%, 54%);
     font-style: bold;
     font-weight: 400;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px){
+    #rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        background-color: hsl(216, 12%, 8%);
+    }
+
+    #rating_container {
+        visibility: visible;
+        background-color: hsl(213, 19%, 18%);
+        width: 100%;
+        max-width: 260px;
+        padding: 40px;
+        border-radius: 30px;
+        height: 35%;
+    }
+
+    .btn {
+        background-color: hsl(213, 16%, 22%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+        font-size: 15px;
+        font-weight: 700;
+        font-style: bold;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .btn.active {
+        background-color: hsl(217, 12%, 63%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+        font-size: 15px;
+        font-weight: 700;
+        font-style: bold;
+    }
+
+    .submit_button {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(25, 97%, 53%);
+        cursor: pointer;
+    }
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px){
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        background-color: hsl(216, 12%, 8%); 
+    }
+    
+    #rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        background-color: hsl(216, 12%, 8%);
+    }
+
+    #rating_container {
+        visibility: visible;
+        background-color: hsl(213, 19%, 18%);
+        width: 100%;
+        max-width: 260px;
+        padding: 40px;
+        border-radius: 30px;
+        height: 45%;
+    }
+
+    .text_container h2 {
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom: 1px;
+    }
+    
+    .text_container p {
+        color: hsl(217, 12%, 63%);
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        cursor: pointer;
+        margin-bottom: 10px;
+        gap: 6px;
+    }
+    
+    .btn {
+        background-color: hsl(213, 16%, 22%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+        font-size: 15px;
+        font-weight: 700;
+        font-style: bold;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .btn.active {
+        background-color: hsl(217, 12%, 63%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+        font-size: 15px;
+        font-weight: 700;
+        font-style: bold;
+    }
+
+    .submit_button {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(25, 97%, 53%);
+        cursor: pointer;
+    }
+
+    #thanks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        background-color: hsl(216, 12%, 8%);
+    } 
+    
+    #thankyou_container {
+        justify-content: center;
+        background-color: hsl(213, 19%, 18%);
+        width: 100%;
+        max-width: 260px;
+        padding: 40px;
+        border-radius: 30px;
+        height: 65%;
+    }
+    
+    .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 1px;
+        margin-bottom: 25px;
+    }
+    
+    .selected_text {
+        border: 1px solid transparent;
+        border-radius: 15px;
+        background-color: hsl(213, 16%, 22%);
+        padding: 5px;
+        color: hsl(25, 97%, 53%);
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 68%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .text_thankyou h2 {
+        display: flex;
+        justify-content: center;
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom: 1px;
+    }
+    
+    .text_thankyou p {
+        display: flex;
+        text-align: center;
+        letter-spacing: 0.3px;
+        justify-content: center;
+        font-size: 15px;
+        word-spacing: 0.5px;
+        color: hsl(216, 12%, 54%);
+        font-style: bold;
+        font-weight: 400;
+    }
 }
